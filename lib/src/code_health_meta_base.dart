@@ -3,7 +3,9 @@ class CHTransfer{
   final String package;
   /// export file
   final String export;
-  /// destination
-  final String dest;
-  const CHTransfer({this.package, this.export, this.dest});
+  /// destination directory, example 'packageName|lib/[directory]'
+  final String directory;
+  /// new filename
+  final String filename;
+  const CHTransfer({this.package, this.export, this.directory, this.filename});
 }
